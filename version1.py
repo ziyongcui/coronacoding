@@ -40,27 +40,27 @@ def smartComputer(boardState):
 				return 
 	if (boardState[0] == boardState[4] == "O"):
 		if (boardState[8] == "E"):
-			boardState[8] == "O"
+			boardState[8] = "O"
 			return
 	elif (boardState[0] == boardState[8] == "O"):
 		if (boardState[4] == "E"):
-			boardState[4] == "O"
+			boardState[4] = "O"
 			return
 	elif (boardState[4] == boardState[8] == "O"):
 		if (boardState[0] == "E"):
-			boardState[0] == "O"
+			boardState[0] = "O"
 			return
 	elif (boardState[2] == boardState[4] == "O"):
 		if (boardState[6] == "E"):
-			boardState[6] == "O"
+			boardState[6] = "O"
 			return
 	elif (boardState[2] == boardState[6] == "O"):
 		if (boardState[4] == "E"):
-			boardState[4] == "O"
+			boardState[4] = "O"
 			return
 	elif (boardState[6] == boardState[4] == "O"):
 		if (boardState[2] == "E"):
-			boardState[2] == "O"
+			boardState[2] = "O"
 			return
 
 	# checking for moves that can lose the game
@@ -92,27 +92,27 @@ def smartComputer(boardState):
 
 	if (boardState[0] == boardState[4] == "X"):
 		if (boardState[8] == "E"):
-			boardState[8] == "O"
+			boardState[8] = "O"
 			return
 	elif (boardState[0] == boardState[8] == "X"):
 		if (boardState[4] == "E"):
-			boardState[4] == "O"
+			boardState[4] = "O"
 			return
 	elif (boardState[4] == boardState[8] == "X"):
 		if (boardState[0] == "E"):
-			boardState[0] == "O"
+			boardState[0] = "O"
 			return
 	elif (boardState[2] == boardState[4] == "X"):
 		if (boardState[6] == "E"):
-			boardState[6] == "O"
+			boardState[6] = "O"
 			return
 	elif (boardState[2] == boardState[6] == "X"):
 		if (boardState[4] == "E"):
-			boardState[4] == "O"
+			boardState[4] = "O"
 			return
 	elif (boardState[6] == boardState[4] == "X"):
 		if (boardState[2] == "E"):
-			boardState[2] == "O"
+			boardState[2] = "O"
 			return
 	#check corners: 0, 2, 6, 8
 	for i in range(9):
